@@ -7,6 +7,8 @@ import Home from './Pages/Home'
 import { Provider } from 'react-redux'
 import { store } from './store/store'
 import Cart from './Pages/Cart'
+import ProductDetails from './Pages/ProductDetails';
+import WhicshList from './Pages/WhicshList';
 
 function App() {
 
@@ -23,6 +25,9 @@ function App() {
 
             <Route path='/' element={<Home />} />
             <Route path='/cart' element={<Cart />} />
+            <Route path='/whish-list' element={<WhicshList />} />
+            <Route path='/product-details' element={<ProductDetails />} />
+
 
           </Routes>
         </BrowserRouter>
